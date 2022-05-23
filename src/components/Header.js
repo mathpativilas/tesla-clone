@@ -4,7 +4,7 @@ import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
-import { selectCars } from "./Features/car/carSlice";
+
 import { useSelector } from "react-redux";
 
 function Header() {
