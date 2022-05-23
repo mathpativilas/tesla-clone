@@ -16,14 +16,14 @@ function Header() {
 
   return (
     <Container>
-      <a>
+      <a href="#name">
         <img src="./images/logo.svg" alt="logo" />
       </a>
       <Menu>
         {cars &&
           cars.map((item, index) => {
             return (
-              <a href="#" key={index}>
+              <a href="#name" key={index}>
                 {" "}
                 {item}
               </a>
@@ -31,9 +31,9 @@ function Header() {
           })}
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
+        <a href="#name">Shop</a>
 
-        <a href="#">Tesla Account</a>
+        <a href="#name">Tesla Account</a>
 
         <CustomMenu onClick={() => setburgerOpen(true)} />
       </RightMenu>
@@ -46,44 +46,41 @@ function Header() {
         {cars &&
           cars.map((item, index) => {
             return (
-              <li>
-                <a href="#" key={index}>
-                  {" "}
-                  {item}
-                </a>
+              <li key={index}>
+                <a href="#name"> {item}</a>
               </li>
             );
           })}
 
         <li>
-          <a href="#">Existing Inventory</a>{" "}
+          <a href="#name">Existing Inventory</a>{" "}
         </li>
         <li>
-          <a href="#"> Used Inventory</a>{" "}
-        </li>
-        <li>
-          {" "}
-          <a href="#">Trade-in</a>{" "}
+          <a href="#name"> Used Inventory</a>{" "}
         </li>
         <li>
           {" "}
-          <a href="#">Cybertruck</a>{" "}
+          <a href="#name">Trade-in</a>{" "}
         </li>
         <li>
           {" "}
-          <a href="#">Roadster</a>{" "}
+          <a href="#name">Cybertruck</a>{" "}
         </li>
         <li>
           {" "}
-          <a href="#">Semi</a>{" "}
+          <a href="#name">Roadster</a>{" "}
         </li>
         <li>
           {" "}
-          <a href="#">Charging</a>{" "}
+          <a href="#name">Semi</a>{" "}
         </li>
         <li>
           {" "}
-          <a href="#">Best quality</a>{" "}
+          <a href="#name">Charging</a>{" "}
+        </li>
+        <li>
+          {" "}
+          <a href="#name">Best quality</a>{" "}
         </li>
       </BurgerNav>
     </Container>
